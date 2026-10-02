@@ -13,7 +13,7 @@ import plotly.express as px
 #  ## Chargement et préparation des données
 
 # %%
-df = pd.read_csv("supermarket_sales.csv").copy()
+df = pd.read_csv("data/supermarket_sales.csv").copy()
 
 # Conversion date
 df = df.assign(Date=pd.to_datetime(df["Date"], errors="coerce"))
